@@ -1,0 +1,2 @@
+joy:krai_base
+-DCATKIN_DEVEL_PREFIX=/home/alex/krai_base/devel -DCMAKE_INSTALL_PREFIX=/home/alex/krai_base/install -G Unix Makefiles

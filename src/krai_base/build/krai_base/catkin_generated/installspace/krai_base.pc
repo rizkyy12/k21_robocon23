@@ -1,0 +1,8 @@
+prefix=/home/alex/krai_base/install
+
+Name: krai_base
+Description: Description of krai_base
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

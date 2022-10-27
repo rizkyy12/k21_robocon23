@@ -1,0 +1,2 @@
+k21_joy:k21_joy_f710:k21_robocon_pkg:krai_base/src/joy:krai_base/src/krai_base:logitech_f710_ros
+-DCATKIN_DEVEL_PREFIX=/home/rizky/k21_robocon23/devel -DCMAKE_INSTALL_PREFIX=/home/rizky/k21_robocon23/install -G Unix Makefiles

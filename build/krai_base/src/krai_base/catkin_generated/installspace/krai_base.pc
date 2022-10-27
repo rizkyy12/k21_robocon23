@@ -1,0 +1,8 @@
+prefix=/home/rizky/k21_robocon23/install
+
+Name: krai_base
+Description: Description of krai_base
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
