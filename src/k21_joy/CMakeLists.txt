@@ -135,25 +135,30 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(k21_joy_node src/k21_joy.cpp)
-add_executable(k21_base src/k21_base.cpp)
-add_executable(k21_teleop_joy src/joy_node.cpp)
+add_executable(k21_kinematics src/k21_kinematics.cpp)
+# add_executable(k21_base src/k21_base.cpp)
+# add_executable(k21_teleop_joy src/joy_node.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 add_dependencies(k21_joy_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(k21_base ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(k21_teleop_joy ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(k21_kinematics ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(k21_base ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(k21_teleop_joy ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(k21_joy_node
   ${catkin_LIBRARIES}
 )
-target_link_libraries(k21_base
+target_link_libraries(k21_kinematics
   ${catkin_LIBRARIES}
 )
-target_link_libraries(k21_teleop_joy
-  ${catkin_LIBRARIES}
-)
+# target_link_libraries(k21_base
+#   ${catkin_LIBRARIES}
+# )
+# target_link_libraries(k21_teleop_joy
+#   ${catkin_LIBRARIES}
+# )
 
 #############
 ## Install ##

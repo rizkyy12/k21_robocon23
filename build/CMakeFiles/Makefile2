@@ -151,9 +151,8 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory k21_joy
 
 # Recursive "all" directory target.
-k21_joy/all: k21_joy/CMakeFiles/k21_base.dir/all
 k21_joy/all: k21_joy/CMakeFiles/k21_joy_node.dir/all
-k21_joy/all: k21_joy/CMakeFiles/k21_teleop_joy.dir/all
+k21_joy/all: k21_joy/CMakeFiles/k21_kinematics.dir/all
 
 .PHONY : k21_joy/all
 
@@ -172,7 +171,6 @@ k21_joy/clean: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 k21_joy/clean: k21_joy/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 k21_joy/clean: k21_joy/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 k21_joy/clean: k21_joy/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-k21_joy/clean: k21_joy/CMakeFiles/k21_base.dir/clean
 k21_joy/clean: k21_joy/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 k21_joy/clean: k21_joy/CMakeFiles/k21_joy_node.dir/clean
 k21_joy/clean: k21_joy/CMakeFiles/roscpp_generate_messages_py.dir/clean
@@ -189,7 +187,7 @@ k21_joy/clean: k21_joy/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 k21_joy/clean: k21_joy/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 k21_joy/clean: k21_joy/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 k21_joy/clean: k21_joy/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
-k21_joy/clean: k21_joy/CMakeFiles/k21_teleop_joy.dir/clean
+k21_joy/clean: k21_joy/CMakeFiles/k21_kinematics.dir/clean
 k21_joy/clean: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 .PHONY : k21_joy/clean
@@ -786,57 +784,6 @@ k21_joy/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
 .PHONY : k21_joy/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target k21_joy/CMakeFiles/k21_base.dir
-
-# All Build rule for target.
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_py.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_eus.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_py.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-k21_joy/CMakeFiles/k21_base.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-	$(MAKE) -f k21_joy/CMakeFiles/k21_base.dir/build.make k21_joy/CMakeFiles/k21_base.dir/depend
-	$(MAKE) -f k21_joy/CMakeFiles/k21_base.dir/build.make k21_joy/CMakeFiles/k21_base.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rizky/k21_robocon23/build/CMakeFiles --progress-num=13,14 "Built target k21_base"
-.PHONY : k21_joy/CMakeFiles/k21_base.dir/all
-
-# Build rule for subdir invocation for target.
-k21_joy/CMakeFiles/k21_base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rizky/k21_robocon23/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 k21_joy/CMakeFiles/k21_base.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rizky/k21_robocon23/build/CMakeFiles 0
-.PHONY : k21_joy/CMakeFiles/k21_base.dir/rule
-
-# Convenience name for target.
-k21_base: k21_joy/CMakeFiles/k21_base.dir/rule
-
-.PHONY : k21_base
-
-# clean rule for target.
-k21_joy/CMakeFiles/k21_base.dir/clean:
-	$(MAKE) -f k21_joy/CMakeFiles/k21_base.dir/build.make k21_joy/CMakeFiles/k21_base.dir/clean
-.PHONY : k21_joy/CMakeFiles/k21_base.dir/clean
-
-#=============================================================================
 # Target rules for target k21_joy/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
@@ -894,7 +841,7 @@ k21_joy/CMakeFiles/k21_joy_node.dir/all: k21_joy/CMakeFiles/geometry_msgs_genera
 k21_joy/CMakeFiles/k21_joy_node.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f k21_joy/CMakeFiles/k21_joy_node.dir/build.make k21_joy/CMakeFiles/k21_joy_node.dir/depend
 	$(MAKE) -f k21_joy/CMakeFiles/k21_joy_node.dir/build.make k21_joy/CMakeFiles/k21_joy_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rizky/k21_robocon23/build/CMakeFiles --progress-num=17,18 "Built target k21_joy_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rizky/k21_robocon23/build/CMakeFiles --progress-num=15,16 "Built target k21_joy_node"
 .PHONY : k21_joy/CMakeFiles/k21_joy_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1293,55 +1240,55 @@ k21_joy/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
 .PHONY : k21_joy/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target k21_joy/CMakeFiles/k21_teleop_joy.dir
+# Target rules for target k21_joy/CMakeFiles/k21_kinematics.dir
 
 # All Build rule for target.
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_py.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_eus.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_py.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-k21_joy/CMakeFiles/k21_teleop_joy.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-	$(MAKE) -f k21_joy/CMakeFiles/k21_teleop_joy.dir/build.make k21_joy/CMakeFiles/k21_teleop_joy.dir/depend
-	$(MAKE) -f k21_joy/CMakeFiles/k21_teleop_joy.dir/build.make k21_joy/CMakeFiles/k21_teleop_joy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rizky/k21_robocon23/build/CMakeFiles --progress-num=19,20 "Built target k21_teleop_joy"
-.PHONY : k21_joy/CMakeFiles/k21_teleop_joy.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_py.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_eus.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_py.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+k21_joy/CMakeFiles/k21_kinematics.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f k21_joy/CMakeFiles/k21_kinematics.dir/build.make k21_joy/CMakeFiles/k21_kinematics.dir/depend
+	$(MAKE) -f k21_joy/CMakeFiles/k21_kinematics.dir/build.make k21_joy/CMakeFiles/k21_kinematics.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rizky/k21_robocon23/build/CMakeFiles --progress-num=17,18 "Built target k21_kinematics"
+.PHONY : k21_joy/CMakeFiles/k21_kinematics.dir/all
 
 # Build rule for subdir invocation for target.
-k21_joy/CMakeFiles/k21_teleop_joy.dir/rule: cmake_check_build_system
+k21_joy/CMakeFiles/k21_kinematics.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rizky/k21_robocon23/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 k21_joy/CMakeFiles/k21_teleop_joy.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 k21_joy/CMakeFiles/k21_kinematics.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rizky/k21_robocon23/build/CMakeFiles 0
-.PHONY : k21_joy/CMakeFiles/k21_teleop_joy.dir/rule
+.PHONY : k21_joy/CMakeFiles/k21_kinematics.dir/rule
 
 # Convenience name for target.
-k21_teleop_joy: k21_joy/CMakeFiles/k21_teleop_joy.dir/rule
+k21_kinematics: k21_joy/CMakeFiles/k21_kinematics.dir/rule
 
-.PHONY : k21_teleop_joy
+.PHONY : k21_kinematics
 
 # clean rule for target.
-k21_joy/CMakeFiles/k21_teleop_joy.dir/clean:
-	$(MAKE) -f k21_joy/CMakeFiles/k21_teleop_joy.dir/build.make k21_joy/CMakeFiles/k21_teleop_joy.dir/clean
-.PHONY : k21_joy/CMakeFiles/k21_teleop_joy.dir/clean
+k21_joy/CMakeFiles/k21_kinematics.dir/clean:
+	$(MAKE) -f k21_joy/CMakeFiles/k21_kinematics.dir/build.make k21_joy/CMakeFiles/k21_kinematics.dir/clean
+.PHONY : k21_joy/CMakeFiles/k21_kinematics.dir/clean
 
 #=============================================================================
 # Target rules for target k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
@@ -1807,7 +1754,7 @@ k21_joy_f710/CMakeFiles/k21_joy_f710.dir/all: k21_joy/CMakeFiles/geometry_msgs_g
 k21_joy_f710/CMakeFiles/k21_joy_f710.dir/all: k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f k21_joy_f710/CMakeFiles/k21_joy_f710.dir/build.make k21_joy_f710/CMakeFiles/k21_joy_f710.dir/depend
 	$(MAKE) -f k21_joy_f710/CMakeFiles/k21_joy_f710.dir/build.make k21_joy_f710/CMakeFiles/k21_joy_f710.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rizky/k21_robocon23/build/CMakeFiles --progress-num=15,16 "Built target k21_joy_f710"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rizky/k21_robocon23/build/CMakeFiles --progress-num=13,14 "Built target k21_joy_f710"
 .PHONY : k21_joy_f710/CMakeFiles/k21_joy_f710.dir/all
 
 # Build rule for subdir invocation for target.

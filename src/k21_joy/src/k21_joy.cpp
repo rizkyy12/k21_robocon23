@@ -14,9 +14,9 @@ class K21JoyNode{
         void joyCb(const sensor_msgs::Joy::ConstPtr& joy){
             geometry_msgs::Twist twist;
             
-            twist.linear.x = -1*joy->axes[6];
-            twist.linear.y = 1*joy->axes[7];
-            twist.angular.z = -1*joy->axes[3];
+            twist.linear.x = -1*joy->axes[0];
+            twist.linear.y = 1*joy->axes[1];
+            twist.angular.z = -1*joy->axes[2];
             vel_pub.publish(twist);
         }
 };

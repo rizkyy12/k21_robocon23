@@ -90,17 +90,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -134,6 +123,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -301,21 +301,6 @@ std_msgs_generate_messages_eus: k21_joy/CMakeFiles/std_msgs_generate_messages_eu
 std_msgs_generate_messages_eus/fast:
 	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make k21_joy/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-k21_joy/CMakeFiles/k21_base.dir/rule:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f CMakeFiles/Makefile2 k21_joy/CMakeFiles/k21_base.dir/rule
-.PHONY : k21_joy/CMakeFiles/k21_base.dir/rule
-
-# Convenience name for target.
-k21_base: k21_joy/CMakeFiles/k21_base.dir/rule
-
-.PHONY : k21_base
-
-# fast build rule for target.
-k21_base/fast:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/k21_base.dir/build.make k21_joy/CMakeFiles/k21_base.dir/build
-.PHONY : k21_base/fast
 
 # Convenience name for target.
 k21_joy/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
@@ -558,19 +543,19 @@ geometry_msgs_generate_messages_eus/fast:
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-k21_joy/CMakeFiles/k21_teleop_joy.dir/rule:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f CMakeFiles/Makefile2 k21_joy/CMakeFiles/k21_teleop_joy.dir/rule
-.PHONY : k21_joy/CMakeFiles/k21_teleop_joy.dir/rule
+k21_joy/CMakeFiles/k21_kinematics.dir/rule:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f CMakeFiles/Makefile2 k21_joy/CMakeFiles/k21_kinematics.dir/rule
+.PHONY : k21_joy/CMakeFiles/k21_kinematics.dir/rule
 
 # Convenience name for target.
-k21_teleop_joy: k21_joy/CMakeFiles/k21_teleop_joy.dir/rule
+k21_kinematics: k21_joy/CMakeFiles/k21_kinematics.dir/rule
 
-.PHONY : k21_teleop_joy
+.PHONY : k21_kinematics
 
 # fast build rule for target.
-k21_teleop_joy/fast:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/k21_teleop_joy.dir/build.make k21_joy/CMakeFiles/k21_teleop_joy.dir/build
-.PHONY : k21_teleop_joy/fast
+k21_kinematics/fast:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/k21_kinematics.dir/build.make k21_joy/CMakeFiles/k21_kinematics.dir/build
+.PHONY : k21_kinematics/fast
 
 # Convenience name for target.
 k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
@@ -586,60 +571,6 @@ rosgraph_msgs_generate_messages_cpp: k21_joy/CMakeFiles/rosgraph_msgs_generate_m
 rosgraph_msgs_generate_messages_cpp/fast:
 	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-src/joy_node.o: src/joy_node.cpp.o
-
-.PHONY : src/joy_node.o
-
-# target to build an object file
-src/joy_node.cpp.o:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/k21_teleop_joy.dir/build.make k21_joy/CMakeFiles/k21_teleop_joy.dir/src/joy_node.cpp.o
-.PHONY : src/joy_node.cpp.o
-
-src/joy_node.i: src/joy_node.cpp.i
-
-.PHONY : src/joy_node.i
-
-# target to preprocess a source file
-src/joy_node.cpp.i:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/k21_teleop_joy.dir/build.make k21_joy/CMakeFiles/k21_teleop_joy.dir/src/joy_node.cpp.i
-.PHONY : src/joy_node.cpp.i
-
-src/joy_node.s: src/joy_node.cpp.s
-
-.PHONY : src/joy_node.s
-
-# target to generate assembly for a file
-src/joy_node.cpp.s:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/k21_teleop_joy.dir/build.make k21_joy/CMakeFiles/k21_teleop_joy.dir/src/joy_node.cpp.s
-.PHONY : src/joy_node.cpp.s
-
-src/k21_base.o: src/k21_base.cpp.o
-
-.PHONY : src/k21_base.o
-
-# target to build an object file
-src/k21_base.cpp.o:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/k21_base.dir/build.make k21_joy/CMakeFiles/k21_base.dir/src/k21_base.cpp.o
-.PHONY : src/k21_base.cpp.o
-
-src/k21_base.i: src/k21_base.cpp.i
-
-.PHONY : src/k21_base.i
-
-# target to preprocess a source file
-src/k21_base.cpp.i:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/k21_base.dir/build.make k21_joy/CMakeFiles/k21_base.dir/src/k21_base.cpp.i
-.PHONY : src/k21_base.cpp.i
-
-src/k21_base.s: src/k21_base.cpp.s
-
-.PHONY : src/k21_base.s
-
-# target to generate assembly for a file
-src/k21_base.cpp.s:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/k21_base.dir/build.make k21_joy/CMakeFiles/k21_base.dir/src/k21_base.cpp.s
-.PHONY : src/k21_base.cpp.s
 
 src/k21_joy.o: src/k21_joy.cpp.o
 
@@ -668,6 +599,33 @@ src/k21_joy.cpp.s:
 	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/k21_joy_node.dir/build.make k21_joy/CMakeFiles/k21_joy_node.dir/src/k21_joy.cpp.s
 .PHONY : src/k21_joy.cpp.s
 
+src/k21_kinematics.o: src/k21_kinematics.cpp.o
+
+.PHONY : src/k21_kinematics.o
+
+# target to build an object file
+src/k21_kinematics.cpp.o:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/k21_kinematics.dir/build.make k21_joy/CMakeFiles/k21_kinematics.dir/src/k21_kinematics.cpp.o
+.PHONY : src/k21_kinematics.cpp.o
+
+src/k21_kinematics.i: src/k21_kinematics.cpp.i
+
+.PHONY : src/k21_kinematics.i
+
+# target to preprocess a source file
+src/k21_kinematics.cpp.i:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/k21_kinematics.dir/build.make k21_joy/CMakeFiles/k21_kinematics.dir/src/k21_kinematics.cpp.i
+.PHONY : src/k21_kinematics.cpp.i
+
+src/k21_kinematics.s: src/k21_kinematics.cpp.s
+
+.PHONY : src/k21_kinematics.s
+
+# target to generate assembly for a file
+src/k21_kinematics.cpp.s:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_joy/CMakeFiles/k21_kinematics.dir/build.make k21_joy/CMakeFiles/k21_kinematics.dir/src/k21_kinematics.cpp.s
+.PHONY : src/k21_kinematics.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -677,7 +635,6 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... edit_cache"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
@@ -688,7 +645,6 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_eus"
-	@echo "... k21_base"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... k21_joy_node"
 	@echo "... roscpp_generate_messages_py"
@@ -706,18 +662,16 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
-	@echo "... k21_teleop_joy"
+	@echo "... k21_kinematics"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... test"
-	@echo "... src/joy_node.o"
-	@echo "... src/joy_node.i"
-	@echo "... src/joy_node.s"
-	@echo "... src/k21_base.o"
-	@echo "... src/k21_base.i"
-	@echo "... src/k21_base.s"
+	@echo "... edit_cache"
 	@echo "... src/k21_joy.o"
 	@echo "... src/k21_joy.i"
 	@echo "... src/k21_joy.s"
+	@echo "... src/k21_kinematics.o"
+	@echo "... src/k21_kinematics.i"
+	@echo "... src/k21_kinematics.s"
 .PHONY : help
 
 

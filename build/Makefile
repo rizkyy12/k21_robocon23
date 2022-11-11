@@ -402,19 +402,6 @@ std_msgs_generate_messages_eus/fast:
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named k21_base
-
-# Build rule for target.
-k21_base: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 k21_base
-.PHONY : k21_base
-
-# fast build rule for target.
-k21_base/fast:
-	$(MAKE) -f k21_joy/CMakeFiles/k21_base.dir/build.make k21_joy/CMakeFiles/k21_base.dir/build
-.PHONY : k21_base/fast
-
-#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -623,17 +610,17 @@ geometry_msgs_generate_messages_eus/fast:
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named k21_teleop_joy
+# Target rules for targets named k21_kinematics
 
 # Build rule for target.
-k21_teleop_joy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 k21_teleop_joy
-.PHONY : k21_teleop_joy
+k21_kinematics: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 k21_kinematics
+.PHONY : k21_kinematics
 
 # fast build rule for target.
-k21_teleop_joy/fast:
-	$(MAKE) -f k21_joy/CMakeFiles/k21_teleop_joy.dir/build.make k21_joy/CMakeFiles/k21_teleop_joy.dir/build
-.PHONY : k21_teleop_joy/fast
+k21_kinematics/fast:
+	$(MAKE) -f k21_joy/CMakeFiles/k21_kinematics.dir/build.make k21_joy/CMakeFiles/k21_kinematics.dir/build
+.PHONY : k21_kinematics/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_cpp
@@ -900,7 +887,6 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_eus"
-	@echo "... k21_base"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... k21_joy_node"
 	@echo "... roscpp_generate_messages_py"
@@ -917,7 +903,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
-	@echo "... k21_teleop_joy"
+	@echo "... k21_kinematics"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... joy_node"
 	@echo "... clean_test_results_joy"
