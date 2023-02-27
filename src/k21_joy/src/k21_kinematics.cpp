@@ -48,7 +48,7 @@ class K21Kinematics{
             }
 
             //Gerak Y
-            if (Vy_joy == 1){
+            else if (Vy_joy == 1){
                 Vx = 0;
                 Vy = 20;
                 w = 0;
@@ -60,13 +60,13 @@ class K21Kinematics{
             }
 
             //Gerak X
-            if (Vx_joy == 1){
-                Vx = 20;
+            else if (Vx_joy == 1){
+                Vx = -20;
                 Vy = 0;
                 w = 0;
             }
             else if (Vx_joy == -1){
-                Vx = -20;
+                Vx = 20;
                 Vy = 0;
                 w = 0;
             }
