@@ -636,6 +636,19 @@ rosgraph_msgs_generate_messages_cpp/fast:
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named k21_joy
+
+# Build rule for target.
+k21_joy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 k21_joy
+.PHONY : k21_joy
+
+# fast build rule for target.
+k21_joy/fast:
+	$(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_joy.dir/build.make k21_robocon_pkg/CMakeFiles/k21_joy.dir/build
+.PHONY : k21_joy/fast
+
+#=============================================================================
 # Target rules for targets named joy_node
 
 # Build rule for target.
@@ -905,6 +918,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... k21_kinematics"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... k21_joy"
 	@echo "... joy_node"
 	@echo "... clean_test_results_joy"
 	@echo "... diagnostic_msgs_generate_messages_cpp"

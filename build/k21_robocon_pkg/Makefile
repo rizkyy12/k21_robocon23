@@ -167,6 +167,48 @@ depend:
 	cd /home/rizky/k21_robocon23/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+k21_robocon_pkg/CMakeFiles/k21_joy.dir/rule:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f CMakeFiles/Makefile2 k21_robocon_pkg/CMakeFiles/k21_joy.dir/rule
+.PHONY : k21_robocon_pkg/CMakeFiles/k21_joy.dir/rule
+
+# Convenience name for target.
+k21_joy: k21_robocon_pkg/CMakeFiles/k21_joy.dir/rule
+
+.PHONY : k21_joy
+
+# fast build rule for target.
+k21_joy/fast:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_joy.dir/build.make k21_robocon_pkg/CMakeFiles/k21_joy.dir/build
+.PHONY : k21_joy/fast
+
+src/k21_joy.o: src/k21_joy.cpp.o
+
+.PHONY : src/k21_joy.o
+
+# target to build an object file
+src/k21_joy.cpp.o:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_joy.dir/build.make k21_robocon_pkg/CMakeFiles/k21_joy.dir/src/k21_joy.cpp.o
+.PHONY : src/k21_joy.cpp.o
+
+src/k21_joy.i: src/k21_joy.cpp.i
+
+.PHONY : src/k21_joy.i
+
+# target to preprocess a source file
+src/k21_joy.cpp.i:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_joy.dir/build.make k21_robocon_pkg/CMakeFiles/k21_joy.dir/src/k21_joy.cpp.i
+.PHONY : src/k21_joy.cpp.i
+
+src/k21_joy.s: src/k21_joy.cpp.s
+
+.PHONY : src/k21_joy.s
+
+# target to generate assembly for a file
+src/k21_joy.cpp.s:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_joy.dir/build.make k21_robocon_pkg/CMakeFiles/k21_joy.dir/src/k21_joy.cpp.s
+.PHONY : src/k21_joy.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -180,6 +222,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... k21_joy"
+	@echo "... src/k21_joy.o"
+	@echo "... src/k21_joy.i"
+	@echo "... src/k21_joy.s"
 .PHONY : help
 
 

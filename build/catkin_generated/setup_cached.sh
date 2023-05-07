@@ -7,10 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/rizky/k21_robocon23/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/rizky/k21_robocon23/devel/lib:$LD_LIBRARY_PATH"
-export PATH='/opt/ros/noetic/bin:/home/rizky/.sdkman/candidates/java/current/bin:/home/rizky/.sdkman/candidates/gradle/current/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
-export PKG_CONFIG_PATH="/home/rizky/k21_robocon23/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/rizky/k21_robocon23/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/rizky/k21_robocon23/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/rizky/k21_robocon23/src:$ROS_PACKAGE_PATH"
