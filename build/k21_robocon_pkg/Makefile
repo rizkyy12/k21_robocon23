@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+k21_robocon_pkg/CMakeFiles/k21_lifter.dir/rule:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f CMakeFiles/Makefile2 k21_robocon_pkg/CMakeFiles/k21_lifter.dir/rule
+.PHONY : k21_robocon_pkg/CMakeFiles/k21_lifter.dir/rule
+
+# Convenience name for target.
+k21_lifter: k21_robocon_pkg/CMakeFiles/k21_lifter.dir/rule
+
+.PHONY : k21_lifter
+
+# fast build rule for target.
+k21_lifter/fast:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_lifter.dir/build.make k21_robocon_pkg/CMakeFiles/k21_lifter.dir/build
+.PHONY : k21_lifter/fast
+
+# Convenience name for target.
+k21_robocon_pkg/CMakeFiles/k21_led.dir/rule:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f CMakeFiles/Makefile2 k21_robocon_pkg/CMakeFiles/k21_led.dir/rule
+.PHONY : k21_robocon_pkg/CMakeFiles/k21_led.dir/rule
+
+# Convenience name for target.
+k21_led: k21_robocon_pkg/CMakeFiles/k21_led.dir/rule
+
+.PHONY : k21_led
+
+# fast build rule for target.
+k21_led/fast:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_led.dir/build.make k21_robocon_pkg/CMakeFiles/k21_led.dir/build
+.PHONY : k21_led/fast
+
+# Convenience name for target.
 k21_robocon_pkg/CMakeFiles/k21_joy.dir/rule:
 	cd /home/rizky/k21_robocon23/build && $(MAKE) -f CMakeFiles/Makefile2 k21_robocon_pkg/CMakeFiles/k21_joy.dir/rule
 .PHONY : k21_robocon_pkg/CMakeFiles/k21_joy.dir/rule
@@ -209,6 +239,60 @@ src/k21_joy.cpp.s:
 	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_joy.dir/build.make k21_robocon_pkg/CMakeFiles/k21_joy.dir/src/k21_joy.cpp.s
 .PHONY : src/k21_joy.cpp.s
 
+src/k21_led.o: src/k21_led.cpp.o
+
+.PHONY : src/k21_led.o
+
+# target to build an object file
+src/k21_led.cpp.o:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_led.dir/build.make k21_robocon_pkg/CMakeFiles/k21_led.dir/src/k21_led.cpp.o
+.PHONY : src/k21_led.cpp.o
+
+src/k21_led.i: src/k21_led.cpp.i
+
+.PHONY : src/k21_led.i
+
+# target to preprocess a source file
+src/k21_led.cpp.i:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_led.dir/build.make k21_robocon_pkg/CMakeFiles/k21_led.dir/src/k21_led.cpp.i
+.PHONY : src/k21_led.cpp.i
+
+src/k21_led.s: src/k21_led.cpp.s
+
+.PHONY : src/k21_led.s
+
+# target to generate assembly for a file
+src/k21_led.cpp.s:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_led.dir/build.make k21_robocon_pkg/CMakeFiles/k21_led.dir/src/k21_led.cpp.s
+.PHONY : src/k21_led.cpp.s
+
+src/k21_lifter.o: src/k21_lifter.cpp.o
+
+.PHONY : src/k21_lifter.o
+
+# target to build an object file
+src/k21_lifter.cpp.o:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_lifter.dir/build.make k21_robocon_pkg/CMakeFiles/k21_lifter.dir/src/k21_lifter.cpp.o
+.PHONY : src/k21_lifter.cpp.o
+
+src/k21_lifter.i: src/k21_lifter.cpp.i
+
+.PHONY : src/k21_lifter.i
+
+# target to preprocess a source file
+src/k21_lifter.cpp.i:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_lifter.dir/build.make k21_robocon_pkg/CMakeFiles/k21_lifter.dir/src/k21_lifter.cpp.i
+.PHONY : src/k21_lifter.cpp.i
+
+src/k21_lifter.s: src/k21_lifter.cpp.s
+
+.PHONY : src/k21_lifter.s
+
+# target to generate assembly for a file
+src/k21_lifter.cpp.s:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_lifter.dir/build.make k21_robocon_pkg/CMakeFiles/k21_lifter.dir/src/k21_lifter.cpp.s
+.PHONY : src/k21_lifter.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,10 +306,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... k21_lifter"
+	@echo "... k21_led"
 	@echo "... k21_joy"
 	@echo "... src/k21_joy.o"
 	@echo "... src/k21_joy.i"
 	@echo "... src/k21_joy.s"
+	@echo "... src/k21_led.o"
+	@echo "... src/k21_led.i"
+	@echo "... src/k21_led.s"
+	@echo "... src/k21_lifter.o"
+	@echo "... src/k21_lifter.i"
+	@echo "... src/k21_lifter.s"
 .PHONY : help
 
 

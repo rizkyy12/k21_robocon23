@@ -129,17 +129,27 @@ include_directories(
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
 add_executable(k21_joy src/k21_joy.cpp)
+add_executable(k21_led src/k21_led.cpp)
+add_executable(k21_lifter src/k21_lifter.cpp)
 # add_executable(k21_base src/k21_base.cpp)
 # add_executable(k21_teleop_joy src/joy_node.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 add_dependencies(k21_joy ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(k21_led ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(k21_lifter ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 # add_dependencies(k21_base ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 # add_dependencies(k21_teleop_joy ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(k21_joy
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(k21_led
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(k21_lifter
   ${catkin_LIBRARIES}
 )
 ###########

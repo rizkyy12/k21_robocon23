@@ -262,6 +262,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "k21_joy/CMakeFiles/geometry_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "k21_joy/CMakeFiles/k21_kinematics.dir/DependInfo.cmake"
   "k21_joy/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake"
+  "k21_robocon_pkg/CMakeFiles/k21_lifter.dir/DependInfo.cmake"
+  "k21_robocon_pkg/CMakeFiles/k21_led.dir/DependInfo.cmake"
   "k21_robocon_pkg/CMakeFiles/k21_joy.dir/DependInfo.cmake"
   "krai_base/src/joy/CMakeFiles/joy_node.dir/DependInfo.cmake"
   "krai_base/src/joy/CMakeFiles/clean_test_results_joy.dir/DependInfo.cmake"
