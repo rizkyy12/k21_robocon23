@@ -636,6 +636,19 @@ rosgraph_msgs_generate_messages_cpp/fast:
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named k21_adjuster
+
+# Build rule for target.
+k21_adjuster: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 k21_adjuster
+.PHONY : k21_adjuster
+
+# fast build rule for target.
+k21_adjuster/fast:
+	$(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_adjuster.dir/build.make k21_robocon_pkg/CMakeFiles/k21_adjuster.dir/build
+.PHONY : k21_adjuster/fast
+
+#=============================================================================
 # Target rules for targets named k21_lifter
 
 # Build rule for target.
@@ -944,6 +957,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... k21_kinematics"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... k21_adjuster"
 	@echo "... k21_lifter"
 	@echo "... k21_led"
 	@echo "... k21_joy"

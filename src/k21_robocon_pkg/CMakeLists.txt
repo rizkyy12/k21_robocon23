@@ -131,6 +131,7 @@ include_directories(
 add_executable(k21_joy src/k21_joy.cpp)
 add_executable(k21_led src/k21_led.cpp)
 add_executable(k21_lifter src/k21_lifter.cpp)
+add_executable(k21_adjuster src/k21_adjuster.cpp)
 # add_executable(k21_base src/k21_base.cpp)
 # add_executable(k21_teleop_joy src/joy_node.cpp)
 
@@ -139,6 +140,7 @@ add_executable(k21_lifter src/k21_lifter.cpp)
 add_dependencies(k21_joy ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(k21_led ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(k21_lifter ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(k21_adjuster ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 # add_dependencies(k21_base ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 # add_dependencies(k21_teleop_joy ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
@@ -150,6 +152,9 @@ target_link_libraries(k21_led
   ${catkin_LIBRARIES}
 )
 target_link_libraries(k21_lifter
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(k21_adjuster
   ${catkin_LIBRARIES}
 )
 ###########

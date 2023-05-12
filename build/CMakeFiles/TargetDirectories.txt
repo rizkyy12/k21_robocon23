@@ -76,6 +76,7 @@
 /home/rizky/k21_robocon23/build/k21_robocon_pkg/CMakeFiles/rebuild_cache.dir
 /home/rizky/k21_robocon23/build/k21_robocon_pkg/CMakeFiles/edit_cache.dir
 /home/rizky/k21_robocon23/build/k21_robocon_pkg/CMakeFiles/test.dir
+/home/rizky/k21_robocon23/build/k21_robocon_pkg/CMakeFiles/k21_adjuster.dir
 /home/rizky/k21_robocon23/build/k21_robocon_pkg/CMakeFiles/k21_lifter.dir
 /home/rizky/k21_robocon23/build/k21_robocon_pkg/CMakeFiles/k21_led.dir
 /home/rizky/k21_robocon23/build/k21_robocon_pkg/CMakeFiles/k21_joy.dir

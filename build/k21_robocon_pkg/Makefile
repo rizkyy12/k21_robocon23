@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+k21_robocon_pkg/CMakeFiles/k21_adjuster.dir/rule:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f CMakeFiles/Makefile2 k21_robocon_pkg/CMakeFiles/k21_adjuster.dir/rule
+.PHONY : k21_robocon_pkg/CMakeFiles/k21_adjuster.dir/rule
+
+# Convenience name for target.
+k21_adjuster: k21_robocon_pkg/CMakeFiles/k21_adjuster.dir/rule
+
+.PHONY : k21_adjuster
+
+# fast build rule for target.
+k21_adjuster/fast:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_adjuster.dir/build.make k21_robocon_pkg/CMakeFiles/k21_adjuster.dir/build
+.PHONY : k21_adjuster/fast
+
+# Convenience name for target.
 k21_robocon_pkg/CMakeFiles/k21_lifter.dir/rule:
 	cd /home/rizky/k21_robocon23/build && $(MAKE) -f CMakeFiles/Makefile2 k21_robocon_pkg/CMakeFiles/k21_lifter.dir/rule
 .PHONY : k21_robocon_pkg/CMakeFiles/k21_lifter.dir/rule
@@ -211,6 +226,33 @@ k21_joy: k21_robocon_pkg/CMakeFiles/k21_joy.dir/rule
 k21_joy/fast:
 	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_joy.dir/build.make k21_robocon_pkg/CMakeFiles/k21_joy.dir/build
 .PHONY : k21_joy/fast
+
+src/k21_adjuster.o: src/k21_adjuster.cpp.o
+
+.PHONY : src/k21_adjuster.o
+
+# target to build an object file
+src/k21_adjuster.cpp.o:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_adjuster.dir/build.make k21_robocon_pkg/CMakeFiles/k21_adjuster.dir/src/k21_adjuster.cpp.o
+.PHONY : src/k21_adjuster.cpp.o
+
+src/k21_adjuster.i: src/k21_adjuster.cpp.i
+
+.PHONY : src/k21_adjuster.i
+
+# target to preprocess a source file
+src/k21_adjuster.cpp.i:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_adjuster.dir/build.make k21_robocon_pkg/CMakeFiles/k21_adjuster.dir/src/k21_adjuster.cpp.i
+.PHONY : src/k21_adjuster.cpp.i
+
+src/k21_adjuster.s: src/k21_adjuster.cpp.s
+
+.PHONY : src/k21_adjuster.s
+
+# target to generate assembly for a file
+src/k21_adjuster.cpp.s:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_adjuster.dir/build.make k21_robocon_pkg/CMakeFiles/k21_adjuster.dir/src/k21_adjuster.cpp.s
+.PHONY : src/k21_adjuster.cpp.s
 
 src/k21_joy.o: src/k21_joy.cpp.o
 
@@ -306,9 +348,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... k21_adjuster"
 	@echo "... k21_lifter"
 	@echo "... k21_led"
 	@echo "... k21_joy"
+	@echo "... src/k21_adjuster.o"
+	@echo "... src/k21_adjuster.i"
+	@echo "... src/k21_adjuster.s"
 	@echo "... src/k21_joy.o"
 	@echo "... src/k21_joy.i"
 	@echo "... src/k21_joy.s"
