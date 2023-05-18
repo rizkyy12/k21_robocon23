@@ -649,17 +649,17 @@ k21_adjuster/fast:
 .PHONY : k21_adjuster/fast
 
 #=============================================================================
-# Target rules for targets named k21_lifter
+# Target rules for targets named k21_shooter
 
 # Build rule for target.
-k21_lifter: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 k21_lifter
-.PHONY : k21_lifter
+k21_shooter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 k21_shooter
+.PHONY : k21_shooter
 
 # fast build rule for target.
-k21_lifter/fast:
-	$(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_lifter.dir/build.make k21_robocon_pkg/CMakeFiles/k21_lifter.dir/build
-.PHONY : k21_lifter/fast
+k21_shooter/fast:
+	$(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_shooter.dir/build.make k21_robocon_pkg/CMakeFiles/k21_shooter.dir/build
+.PHONY : k21_shooter/fast
 
 #=============================================================================
 # Target rules for targets named k21_led
@@ -958,7 +958,7 @@ help:
 	@echo "... k21_kinematics"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... k21_adjuster"
-	@echo "... k21_lifter"
+	@echo "... k21_shooter"
 	@echo "... k21_led"
 	@echo "... k21_joy"
 	@echo "... joy_node"

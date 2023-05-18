@@ -15,6 +15,7 @@ class K21Adjust{
         }
 
     void adjustCb(const sensor_msgs::Joy& msg){
+        ros::Rate rate(10);
         std_msgs::Int32 degree;
         
         if (msg.buttons[11] == 1){
@@ -25,6 +26,7 @@ class K21Adjust{
             degree.data = -1;
         }
         adjuster_pub.publish(degree);
+        rate.sleep();
     }
 };
 

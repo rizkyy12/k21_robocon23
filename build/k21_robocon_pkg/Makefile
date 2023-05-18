@@ -183,19 +183,19 @@ k21_adjuster/fast:
 .PHONY : k21_adjuster/fast
 
 # Convenience name for target.
-k21_robocon_pkg/CMakeFiles/k21_lifter.dir/rule:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f CMakeFiles/Makefile2 k21_robocon_pkg/CMakeFiles/k21_lifter.dir/rule
-.PHONY : k21_robocon_pkg/CMakeFiles/k21_lifter.dir/rule
+k21_robocon_pkg/CMakeFiles/k21_shooter.dir/rule:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f CMakeFiles/Makefile2 k21_robocon_pkg/CMakeFiles/k21_shooter.dir/rule
+.PHONY : k21_robocon_pkg/CMakeFiles/k21_shooter.dir/rule
 
 # Convenience name for target.
-k21_lifter: k21_robocon_pkg/CMakeFiles/k21_lifter.dir/rule
+k21_shooter: k21_robocon_pkg/CMakeFiles/k21_shooter.dir/rule
 
-.PHONY : k21_lifter
+.PHONY : k21_shooter
 
 # fast build rule for target.
-k21_lifter/fast:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_lifter.dir/build.make k21_robocon_pkg/CMakeFiles/k21_lifter.dir/build
-.PHONY : k21_lifter/fast
+k21_shooter/fast:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_shooter.dir/build.make k21_robocon_pkg/CMakeFiles/k21_shooter.dir/build
+.PHONY : k21_shooter/fast
 
 # Convenience name for target.
 k21_robocon_pkg/CMakeFiles/k21_led.dir/rule:
@@ -308,32 +308,32 @@ src/k21_led.cpp.s:
 	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_led.dir/build.make k21_robocon_pkg/CMakeFiles/k21_led.dir/src/k21_led.cpp.s
 .PHONY : src/k21_led.cpp.s
 
-src/k21_lifter.o: src/k21_lifter.cpp.o
+src/k21_shooter.o: src/k21_shooter.cpp.o
 
-.PHONY : src/k21_lifter.o
+.PHONY : src/k21_shooter.o
 
 # target to build an object file
-src/k21_lifter.cpp.o:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_lifter.dir/build.make k21_robocon_pkg/CMakeFiles/k21_lifter.dir/src/k21_lifter.cpp.o
-.PHONY : src/k21_lifter.cpp.o
+src/k21_shooter.cpp.o:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_shooter.dir/build.make k21_robocon_pkg/CMakeFiles/k21_shooter.dir/src/k21_shooter.cpp.o
+.PHONY : src/k21_shooter.cpp.o
 
-src/k21_lifter.i: src/k21_lifter.cpp.i
+src/k21_shooter.i: src/k21_shooter.cpp.i
 
-.PHONY : src/k21_lifter.i
+.PHONY : src/k21_shooter.i
 
 # target to preprocess a source file
-src/k21_lifter.cpp.i:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_lifter.dir/build.make k21_robocon_pkg/CMakeFiles/k21_lifter.dir/src/k21_lifter.cpp.i
-.PHONY : src/k21_lifter.cpp.i
+src/k21_shooter.cpp.i:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_shooter.dir/build.make k21_robocon_pkg/CMakeFiles/k21_shooter.dir/src/k21_shooter.cpp.i
+.PHONY : src/k21_shooter.cpp.i
 
-src/k21_lifter.s: src/k21_lifter.cpp.s
+src/k21_shooter.s: src/k21_shooter.cpp.s
 
-.PHONY : src/k21_lifter.s
+.PHONY : src/k21_shooter.s
 
 # target to generate assembly for a file
-src/k21_lifter.cpp.s:
-	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_lifter.dir/build.make k21_robocon_pkg/CMakeFiles/k21_lifter.dir/src/k21_lifter.cpp.s
-.PHONY : src/k21_lifter.cpp.s
+src/k21_shooter.cpp.s:
+	cd /home/rizky/k21_robocon23/build && $(MAKE) -f k21_robocon_pkg/CMakeFiles/k21_shooter.dir/build.make k21_robocon_pkg/CMakeFiles/k21_shooter.dir/src/k21_shooter.cpp.s
+.PHONY : src/k21_shooter.cpp.s
 
 # Help Target
 help:
@@ -349,7 +349,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... k21_adjuster"
-	@echo "... k21_lifter"
+	@echo "... k21_shooter"
 	@echo "... k21_led"
 	@echo "... k21_joy"
 	@echo "... src/k21_adjuster.o"
@@ -361,9 +361,9 @@ help:
 	@echo "... src/k21_led.o"
 	@echo "... src/k21_led.i"
 	@echo "... src/k21_led.s"
-	@echo "... src/k21_lifter.o"
-	@echo "... src/k21_lifter.i"
-	@echo "... src/k21_lifter.s"
+	@echo "... src/k21_shooter.o"
+	@echo "... src/k21_shooter.i"
+	@echo "... src/k21_shooter.s"
 .PHONY : help
 
 
