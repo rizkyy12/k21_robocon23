@@ -5,33 +5,45 @@
 
 class K21Shooter{
     private:
-        ros::Subscriber joy;
+        ros::Subscriber joy_shooter;
+        ros::Subscriber joy_feeder;
         ros::Publisher shooter_pub;
-        ros::Publisher relay1_pub;
-        ros::Publisher relay2_pub;
+        ros::Publisher feeder_pub;
 
     public:
         
         K21Shooter(ros::NodeHandle *nh){
             shooter_pub = nh->advertise<std_msgs::Int32>("/shooter", 10);
-            joy = nh->subscribe("/joy", 10, &K21Shooter::lifterCb, this);
-            // relay1_pub = nh->advertise<std_msgs::Int64>("/relay_1", 10);
-            // relay2_pub = nh->advertise<std_msgs::Int64>("/relay_2", 10);
+            feeder_pub = nh->advertise<std_msgs::Int32>("/feeder", 10);
+            joy_shooter = nh->subscribe("/joy", 10, &K21Shooter::lifterCb, this);
+            joy_feeder = nh->subscribe("/joy", 10, &K21Shooter::feederCb, this);
         }
 
     void lifterCb(const sensor_msgs::Joy& msg){
         std_msgs::Int32 shooter;
         
-        if (msg.buttons[5] == 1){
+        if (msg.buttons[2] == 1){
             shooter.data = 1;
         }
         else{
             shooter.data = 0;
         }
         shooter_pub.publish(shooter);
-        // relay1_pub.publish(relay1);
-        // relay1_pub.publish(relay2);
+
+    
     }
+    void feederCb(const sensor_msgs::Joy& msg){
+        std_msgs::Int32 feeder;
+
+        if (msg.buttons[3] == 1){
+            feeder.data = 1;
+        }
+        else{
+            feeder.data = 0;
+        }
+        feeder_pub.publish(feeder);
+    }
+
 };
 
 

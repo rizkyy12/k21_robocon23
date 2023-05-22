@@ -13,8 +13,8 @@ sensor_msgs/Joy.h
 /home/rizky/k21_robocon23/src/k21_robocon_pkg/src/sensor_msgs/Joy.h
 geometry_msgs/Pose2D.h
 /home/rizky/k21_robocon23/src/k21_robocon_pkg/src/geometry_msgs/Pose2D.h
-std_msgs/Int64.h
-/home/rizky/k21_robocon23/src/k21_robocon_pkg/src/std_msgs/Int64.h
+std_msgs/Int32.h
+/home/rizky/k21_robocon23/src/k21_robocon_pkg/src/std_msgs/Int32.h
 
 /opt/ros/noetic/include/geometry_msgs/Pose2D.h
 string
@@ -714,7 +714,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/opt/ros/noetic/include/std_msgs/Int64.h
+/opt/ros/noetic/include/std_msgs/Int32.h
 string
 -
 vector

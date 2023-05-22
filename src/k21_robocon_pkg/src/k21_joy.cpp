@@ -11,12 +11,8 @@ class K21Joy{
         K21Joy(ros::NodeHandle *nh){
             vel_pub = nh->advertise<geometry_msgs::Twist>("/cmd_vel", 10);
             joy = nh->subscribe("/joy", 10, &K21Joy::joyCb, this);
-
-            // v_right_f_Command = nh->advertise<std_msgs::Float64>("/k21_robocon/right_f_motor/command", 1);
-            // v_left_f_Command = nh->advertise<std_msgs::Float64>("/k21_robocon/left_f_motor/command", 1);
-            // v_left_b_Command = nh->advertise<std_msgs::Float64>("/k21_robocon/left_b_motor/command", 1);
-            // v_right_b_Command = nh->advertise<std_msgs::Float64>("/k21_robocon/right_b_motor/command", 1);
         }
+        
         void joyCb(const sensor_msgs::Joy& msg){
 
             geometry_msgs::Twist vel;

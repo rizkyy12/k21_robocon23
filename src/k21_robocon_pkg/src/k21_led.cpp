@@ -10,9 +10,16 @@ int main(int argc, char **argv){
 
      while(ros::ok()){
         std_msgs::Int32 msg;
-        msg.data = 1;
+        
 
-        ROS_INFO("Raspberry ON");
+        if (ros::isShuttingDown){
+            msg.data = 1;
+            ROS_INFO("Raspberry ON");
+        }
+        else {
+            msg.data = 0;
+            ROS_INFO("Raspberry OFF");
+        }
 
         pub.publish(msg);
 

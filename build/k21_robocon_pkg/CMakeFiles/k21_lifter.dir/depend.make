@@ -61,7 +61,7 @@ k21_robocon_pkg/CMakeFiles/k21_lifter.dir/src/k21_lifter.cpp.o: /opt/ros/noetic/
 k21_robocon_pkg/CMakeFiles/k21_lifter.dir/src/k21_lifter.cpp.o: /opt/ros/noetic/include/rosconsole/macros_generated.h
 k21_robocon_pkg/CMakeFiles/k21_lifter.dir/src/k21_lifter.cpp.o: /opt/ros/noetic/include/sensor_msgs/Joy.h
 k21_robocon_pkg/CMakeFiles/k21_lifter.dir/src/k21_lifter.cpp.o: /opt/ros/noetic/include/std_msgs/Header.h
-k21_robocon_pkg/CMakeFiles/k21_lifter.dir/src/k21_lifter.cpp.o: /opt/ros/noetic/include/std_msgs/Int64.h
+k21_robocon_pkg/CMakeFiles/k21_lifter.dir/src/k21_lifter.cpp.o: /opt/ros/noetic/include/std_msgs/Int32.h
 k21_robocon_pkg/CMakeFiles/k21_lifter.dir/src/k21_lifter.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 k21_robocon_pkg/CMakeFiles/k21_lifter.dir/src/k21_lifter.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 
